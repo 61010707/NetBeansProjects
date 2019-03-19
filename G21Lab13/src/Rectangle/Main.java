@@ -14,9 +14,9 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Rectangle r1 = new Rectangle(1, 5, "white", true);
-        Rectangle r2 = new Rectangle(5, 5, "white", false);
-        Rectangle r3 = new Rectangle(5, 1, "Red  ", true);
+        Triangle r1 = new Triangle(12, 12, 12, "white", true);
+        Triangle r2 = new Triangle(12, 12, 12, "Red", true);
+        Triangle r3 = new Triangle(15, 16, 15, "purple", true);
 
         System.out.println("R1 Area: " + r1.getArea());
         System.out.println("R2 Area: " + r2.getArea());

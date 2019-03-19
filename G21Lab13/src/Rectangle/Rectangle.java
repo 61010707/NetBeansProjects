@@ -74,13 +74,7 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle> 
         return this.compareTo((Rectangle) o) == 0;
     }
     
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.width) ^ (Double.doubleToLongBits(this.width) >>> 32));
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.height) ^ (Double.doubleToLongBits(this.height) >>> 32));
-        return hash;
-    }
+ 
     
     @Override
     public String toString() {
