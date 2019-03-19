@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="stopWatch">
+  <ClassDiagramComponents>
+    <Class name="Main" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="sort" returnType="void" visibility="package">
+          <Argument type="double" name="arr"/>
+        </Method>
+        <Method name="generate" returnType="void" visibility="package">
+          <Argument type="double" name="arr"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StopWatch" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="startTime" type="long" visibility="private"/>
+        <Field name="endTime" type="long" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getStartTime" returnType="double" visibility="public"/>
+        <Method name="getEndTime" returnType="double" visibility="public"/>
+        <Method name="start" returnType="void" visibility="public"/>
+        <Method name="stop" returnType="void" visibility="public"/>
+        <Method name="getElapsedTime" returnType="long" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

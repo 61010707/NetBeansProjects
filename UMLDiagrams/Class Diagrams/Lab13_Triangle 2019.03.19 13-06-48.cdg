@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Lab13_Triangle">
+  <ClassDiagramComponents>
+    <Class name="GeometricObject" package="lab13_triangle" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="filled" type="boolean" visibility="private"/>
+        <Field name="dateCreated" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="protected"/>
+        <Constructor visibility="protected">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="filled"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="getDateCreated" returnType="Date" visibility="public"/>
+        <Method name="getFilled" returnType="boolean" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="setFilled" returnType="void" visibility="public">
+          <Argument type="boolean" name="filled"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="getPerimeter" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="lab13_triangle" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Triangle" package="lab13_triangle" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="side1" type="double" visibility="private"/>
+        <Field name="side2" type="double" visibility="private"/>
+        <Field name="side3" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="side1"/>
+          <Argument type="double" name="side2"/>
+          <Argument type="double" name="side3"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="side1"/>
+          <Argument type="double" name="side2"/>
+          <Argument type="double" name="side3"/>
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="filled"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSide1" returnType="double" visibility="public"/>
+        <Method name="getSide2" returnType="double" visibility="public"/>
+        <Method name="getSide3" returnType="double" visibility="public"/>
+        <Method name="getDateCreated" returnType="Date" visibility="public"/>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="getFilled" returnType="boolean" visibility="public"/>
+        <Method name="setSide1" returnType="void" visibility="public">
+          <Argument type="double" name="side1"/>
+        </Method>
+        <Method name="setSide2" returnType="void" visibility="public">
+          <Argument type="double" name="side2"/>
+        </Method>
+        <Method name="setSide3" returnType="void" visibility="public">
+          <Argument type="double" name="side3"/>
+        </Method>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="setFilled" returnType="void" visibility="public">
+          <Argument type="boolean" name="filled"/>
+        </Method>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="getPerimeter" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="lab13_triangle.Triangle" target="lab13_triangle.GeometricObject"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

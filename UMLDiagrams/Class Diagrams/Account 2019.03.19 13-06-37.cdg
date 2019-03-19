@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Account">
+  <ClassDiagramComponents>
+    <Class name="Account" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="balance" type="double" visibility="private"/>
+        <Field name="annualInterestRate" type="double" visibility="private" isStatic="true"/>
+        <Field name="dateCreated" type="Date" visibility="private"/>
+        <Field name="transactions" type="ArrayList&lt;Transaction&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+        <Constructor visibility="package">
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="balance"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="balance"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="setBalance" returnType="void" visibility="public">
+          <Argument type="double" name="balance"/>
+        </Method>
+        <Method name="setAnnualInterestRate" returnType="void" visibility="public">
+          <Argument type="double" name="annualInterestRate"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="getBalance" returnType="double" visibility="public"/>
+        <Method name="getAnnualInterestRate" returnType="double" visibility="public"/>
+        <Method name="getDateCreated" returnType="String" visibility="public"/>
+        <Method name="getMonthlyInterestRate" returnType="double" visibility="public"/>
+        <Method name="getMonthlyInterest" returnType="double" visibility="public"/>
+        <Method name="withdraw" returnType="void" visibility="public">
+          <Argument type="double" name="amount"/>
+        </Method>
+        <Method name="deposit" returnType="void" visibility="public">
+          <Argument type="double" name="amount"/>
+        </Method>
+        <Method name="getTransactions" returnType="ArrayList&lt;Transaction&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Transaction" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="date" type="java.util.Date" visibility="private"/>
+        <Field name="type" type="char" visibility="private"/>
+        <Field name="amount" type="double" visibility="private"/>
+        <Field name="balance" type="double" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="char" name="type"/>
+          <Argument type="double" name="amount"/>
+          <Argument type="double" name="balabnce"/>
+          <Argument type="String" name="description"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAmount" returnType="double" visibility="public"/>
+        <Method name="getBalance" returnType="double" visibility="public"/>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="char" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public">
+          <Argument type="double" name="amount"/>
+        </Method>
+        <Method name="setBalance" returnType="void" visibility="public">
+          <Argument type="double" name="balabnce"/>
+        </Method>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="char" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="transactions" source="Account" target="Transaction" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Transaction&gt;"/>
+    <UseRelation source="Account" target="Transaction" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

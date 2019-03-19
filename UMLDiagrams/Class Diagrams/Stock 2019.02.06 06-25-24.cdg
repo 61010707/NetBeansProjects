@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Stock">
+  <ClassDiagramComponents>
+    <Class name="Main" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Stock" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="symbol" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="previousClosingPrice" type="double" visibility="private"/>
+        <Field name="currentPrice" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="symbol"/>
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getChangePercent" returnType="double" visibility="public"/>
+        <Method name="setCurrentPrice" returnType="void" visibility="public">
+          <Argument type="double" name="currentPrice"/>
+        </Method>
+        <Method name="setPreviousClosingPrice" returnType="void" visibility="public">
+          <Argument type="double" name="previousClosingPrice"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
