@@ -14,5 +14,8 @@ public class Main {
     public static void main(String[] args) {
         Person person = new Person("nieve", "11/3", "0830951385", "hello");
         System.out.println(person.toString());
+
+        Student student = new Student("HellO", "test", "0000", "hello", 2);
+        System.out.println(student.toString());
     }
 }
