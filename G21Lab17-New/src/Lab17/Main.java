@@ -12,6 +12,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -35,7 +37,9 @@ public class Main {
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
-        for (int i = 0; i < 5; i++) {
+        ArrayList time = null;
+        while (fis.available() > 0) {
+
             System.out.println(ois.readObject().toString());
         }
         ois.close();
