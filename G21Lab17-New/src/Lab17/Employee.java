@@ -9,6 +9,51 @@ package Lab17;
  *
  * @author DrZin
  */
-public class Employee {
-    
+public class Employee extends Person {
+
+    private String office;
+    private double salary;
+    private MyDate date;
+
+    public Employee(String name, String address, String phone,
+            String email, String office, double salary) {
+        super(name, address, phone, email);
+        this.office = office;
+        this.salary = salary;
+        this.date = new MyDate();
+    }
+
+    public String getOffice() {
+        return office;
+    }
+
+    public String getSalary() {
+        return String.format("%.2f", this.salary);
+    }
+
+    public String getDateHired() {
+        return date.getMonth() + "/" + date.getDay()
+                + "/" + date.getYear();
+    }
+
+    public void setOffice(String office) {
+        this.office = office;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setDate(MyDate date) {
+        this.date = new MyDate();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + "\nOffice: " + office
+                + "\nSalary: $" + getSalary()
+                + "\nDate hired: " + getDateHired();
+    }
+
 }

@@ -17,5 +17,9 @@ public class Main {
 
         Student student = new Student("HellO", "test", "0000", "hello", 2);
         System.out.println(student.toString());
+
+        MyDate md = new MyDate();
+        System.out.println(md.toString());
+        Employee employee = new Employee("unknown", "unknown", "unknown", "unknown", "unknown", 1);
     }
 }
