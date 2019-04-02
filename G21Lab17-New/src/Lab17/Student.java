@@ -12,24 +12,14 @@ package Lab17;
 public class Student extends Person {
 
     private int status;
-    private final static int FRESHMAN = 1;
-    private final static int SOPHOMORE = 2;
-    private final static int JUNIOR = 3;
-    private final static int SENIOR = 4;
-
-    public Student() {
-    }
+    public final static int FRESHMAN = 1;
+    public final static int SOPHOMORE = 2;
+    public final static int JUNIOR = 3;
+    public final static int SENIOR = 4;
 
     public Student(String name, String address, String phone, String email, int status) {
         super(name, address, phone, email);
-        if (status >= 1 || status <= 4) {
-            this.status = status;
-        }
-        else
-        {
-        
-        }
-       
+        this.status = status;
     }
 
     public void setStatus(int status) {
@@ -37,7 +27,7 @@ public class Student extends Person {
     }
 
     public String getStatus() {
-        switch (status) {
+        switch (this.status) {
             case 1:
                 return "freshman";
             case 2:
@@ -47,13 +37,14 @@ public class Student extends Person {
             case 4:
                 return "senior";
             default:
-                return "UNknown";
+                return "Unknown";
         }
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nStatus" + getStatus();
+        return super.toString()
+                + "\nStatus : " + getStatus();
     }
 
 }

@@ -17,6 +17,7 @@ public class Person {
     private String email;
 
     public Person() {
+        this("Unknown", "Unknown", "Unknown", "Unknown");
     }
 
     public Person(String name, String address, String phone, String email) {
@@ -60,10 +61,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "\nname" + this.name
-                + "\naddress" + this.address
-                + "\nphone" + this.phone
-                + "\nemail" + this.email;
+        return "\nName : " + this.name
+                + "\nAddress : " + this.address
+                + "\nPhone number : " + this.phone
+                + "\nEmail address : " + this.email;
     }
 
 }
