@@ -5,11 +5,13 @@
  */
 package Lab17;
 
+import java.io.Serializable;
+
 /**
  *
  * @author DrZin
  */
-public class Employee extends Person {
+public class Employee extends Person implements Serializable{
 
     private String office;
     private double salary;

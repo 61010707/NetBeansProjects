@@ -5,11 +5,13 @@
  */
 package Lab17;
 
+import java.io.Serializable;
+
 /**
  *
  * @author DrZin
  */
-public class Faculty extends Employee {
+public class Faculty extends Employee implements Serializable {
 
     private String officeHours;
     private String rank;

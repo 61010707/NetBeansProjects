@@ -5,11 +5,13 @@
  */
 package Lab17;
 
+import java.io.Serializable;
+
 /**
  *
  * @author DrZin
  */
-public class Student extends Person {
+public class Student extends Person implements Serializable {
 
     private int status;
     public final static int FRESHMAN = 1;

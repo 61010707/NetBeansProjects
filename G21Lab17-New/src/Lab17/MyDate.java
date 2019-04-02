@@ -5,13 +5,14 @@
  */
 package Lab17;
 
+import java.io.Serializable;
 import java.util.GregorianCalendar;
 
 /**
  *
  * @author DrZin
  */
-public class MyDate {
+public class MyDate implements Serializable {
 
     private int year;
     private int month;

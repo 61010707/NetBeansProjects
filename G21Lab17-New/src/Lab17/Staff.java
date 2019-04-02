@@ -5,16 +5,18 @@
  */
 package Lab17;
 
+import java.io.Serializable;
+
 /**
  *
  * @author DrZin
  */
-public class Staff extends Employee {
+public class Staff extends Employee implements Serializable {
 
     private String title;
 
-    public Staff(String title, String name, String address, String phone,
-            String email, String office, double salary) {
+    public Staff( String name, String address, String phone,
+            String email, String office, double salary,String title) {
         super(name, address, phone, email, office, salary);
         this.title = title;
     }
