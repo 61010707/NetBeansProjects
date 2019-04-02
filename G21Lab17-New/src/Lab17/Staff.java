@@ -9,6 +9,28 @@ package Lab17;
  *
  * @author DrZin
  */
-public class Staff {
-    
+public class Staff extends Employee {
+
+    private String title;
+
+    public Staff(String title, String name, String address, String phone,
+            String email, String office, double salary) {
+        super(name, address, phone, email, office, salary);
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + "\nTitle  : " + this.title; //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
