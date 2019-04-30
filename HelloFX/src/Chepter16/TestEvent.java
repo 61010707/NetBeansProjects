@@ -14,12 +14,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import javax.swing.plaf.ColorUIResource;
-import javafx.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.paint.Paint;
 
 /**
  *
@@ -42,8 +39,8 @@ public class TestEvent extends Application {
         Scene scene = new Scene(borderPane, 250, 250);
         stage.setScene(scene);
         stage.show();
-        btEnlarge.setOnAction(e ->circlePane.enlarge());
-        btShrink.setOnAction(e->circlePane.shrink());
+        btEnlarge.setOnAction(e -> circlePane.enlarge());
+        btShrink.setOnAction(e -> circlePane.shrink());
 
     }
 
