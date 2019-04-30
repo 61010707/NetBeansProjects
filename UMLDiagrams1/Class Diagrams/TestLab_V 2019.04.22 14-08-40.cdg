@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestLab_V">
+  <ClassDiagramComponents>
+    <Class name="FourWheel" package="TestLab_V" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="cc" type="int" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+        <Field name="transactions" type="ArrayList&lt;Transaction&gt;" visibility="private"/>
+        <Field name="tax" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="cc"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="color"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCc" returnType="int" visibility="public"/>
+        <Method name="setCc" returnType="void" visibility="public">
+          <Argument type="int" name="cc"/>
+        </Method>
+        <Method name="getYear" returnType="int" visibility="public"/>
+        <Method name="setYear" returnType="void" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getTransactions" returnType="ArrayList&lt;Transaction&gt;" visibility="public"/>
+        <Method name="setTransactions" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Transaction&gt;" name="transactions"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calculateTax" returnType="double" visibility="public"/>
+        <Method name="payTax" returnType="void" visibility="public"/>
+        <Method name="getTax" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="TestLab_V" visibility="public" xPosition="1203.0" yPosition="562.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MoreWheel" package="TestLab_V" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="cc" type="int" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+        <Field name="transactions" type="ArrayList&lt;Transaction&gt;" visibility="private"/>
+        <Field name="tax" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="color"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="cc"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="color"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCc" returnType="int" visibility="public"/>
+        <Method name="setCc" returnType="void" visibility="public">
+          <Argument type="int" name="cc"/>
+        </Method>
+        <Method name="getYear" returnType="int" visibility="public"/>
+        <Method name="setYear" returnType="void" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getTransactions" returnType="ArrayList&lt;Transaction&gt;" visibility="public"/>
+        <Method name="setTransactions" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Transaction&gt;" name="transactions"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calculateTax" returnType="double" visibility="public"/>
+        <Method name="payTax" returnType="void" visibility="public"/>
+        <Method name="getTax" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Transaction" package="TestLab_V" visibility="public" xPosition="637.0" yPosition="549.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="tax" type="double" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="name"/>
+          <Argument type="double" name="tax"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getTax" returnType="double" visibility="public"/>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setTax" returnType="void" visibility="public">
+          <Argument type="double" name="tax"/>
+        </Method>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TwoWheel" package="TestLab_V" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vechicle" package="TestLab_V" visibility="public" isAbstract="true" xPosition="99.0" yPosition="562.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="color"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calculateTax" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="payTax" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="getTax" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Vechicle" name="vechicle"/>
+        </Method>
+        <Method name="getCompare" returnType="int" visibility="public" isStatic="true">
+          <Argument type="Vechicle" name="obj"/>
+          <Argument type="Vechicle" name="obj1"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="TestLab_V.FourWheel" target="TestLab_V.Vechicle"/>
+    <UseRelation source="TestLab_V.MoreWheel" target="TestLab_V.Transaction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="TestLab_V.Vechicle" target="TestLab_V.Vechicle" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="TestLab_V.FourWheel" target="TestLab_V.Transaction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="transactions" source="TestLab_V.MoreWheel" target="TestLab_V.Transaction" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Transaction&gt;"/>
+    <HasRelation name="transactions" source="TestLab_V.FourWheel" target="TestLab_V.Transaction" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Transaction&gt;"/>
+    <IsRelation name="is" source="TestLab_V.MoreWheel" target="TestLab_V.Vechicle"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

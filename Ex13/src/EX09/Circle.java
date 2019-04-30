@@ -9,7 +9,7 @@ package EX09;
  *
  * @author DrZin
  */
-public class Circle extends GeometricObject {
+public class Circle extends GeometricObject implements Comparable<Circle>{
 
     private double radius;
 

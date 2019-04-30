@@ -10,9 +10,12 @@ package Ex04;
  * @author DrZin
  */
 public class Main {
+
     public static void main(String[] args) {
-        Circle circle1 = new Circle(25);
-        Circle circle2 = new Circle(35);
-        System.out.println(Circle.max(circle1, circle2).toString());
+        GeometricObject circle1 = new Circle(25);
+        GeometricObject circle2 = new Circle(25);
+        System.out.println(GeometricObject.max(circle1, circle2).toString());
+        System.out.println(GeometricObject.equals(circle2, circle1));
+        
     }
 }

@@ -25,7 +25,7 @@ import EX8.Transaction;
 import java.util.Date;
 import java.util.ArrayList;
 
-public class Account {
+public class Account extends ba{
     // Data fields
 
     private String name;

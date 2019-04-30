@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ex04;
-
-import java.util.Objects;
+package Ex10;
 
 /**
  *
  * @author DrZin
  */
-public abstract class GeometricObject implements Comparable<Object> {
+public abstract class GeometricObject {
 
     private String color = "while";
     private boolean filled;
@@ -72,30 +70,6 @@ public abstract class GeometricObject implements Comparable<Object> {
     public String toString() {
         return "created on " + dateCreated + "\ncolor: " + color
                 + " and filled: " + filled;
-    }
-
-    public int compareTo(GeometricObject o) {
-        if (this.getArea() > o.getArea()) {
-            return 1;
-        } else if (this.getArea() < o.getArea()) {
-            return -1;
-        } else {
-            return 0;
-        }
-    }
-
-    /**
-     * Abstract method getMax
-     */
-    public static GeometricObject max(GeometricObject o1, GeometricObject o2) {
-        return o1.compareTo(o2) == 1 ? o1 : o2;
-    }
-
-    public static boolean equals(GeometricObject obj, GeometricObject obj1) {
-        return obj.compareTo(obj1) == 0;
-        
-        
-
     }
 
     /**
