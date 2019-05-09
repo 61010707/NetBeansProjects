@@ -49,8 +49,8 @@ public class Transaction implements Serializable {
 
     @Override
     public String toString() {
-        return "Interest Rate : " + String.format("%6.2f", this.interestRate) + '%' + " MonthyPayment :    " + String.format("%-10.2f", this.monthlyPay)
-                + " TotalPayment :    " + String.format("%-10.2f", this.TotalPay) ;
+        return String.format("%6.2f", this.interestRate) + '%' + String.format("%-10.2f", this.monthlyPay)
+                + String.format("%-10.2f", this.TotalPay);
     }
 
 }
