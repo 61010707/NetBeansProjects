@@ -19,7 +19,9 @@ public class Exercise16_13 extends Application {
 
     @Override // Override the start method in the Application class
     public void start(Stage primaryStage) {
+        // use borderPane is a main pane 
         BorderPane pane = new BorderPane();
+        // create new tex area show loan 
         TextArea taTable = new TextArea();
         pane.setCenter(new ScrollPane(taTable));
 
