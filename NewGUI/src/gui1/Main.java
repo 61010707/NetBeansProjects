@@ -26,6 +26,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -58,7 +59,10 @@ public class Main extends Application {
 
         //Center
         TextArea textArea = new TextArea();
-        bp.setCenter(new ScrollPane(textArea));
+        StackPane sp = new StackPane();
+        sp.setPadding(new Insets(10));
+        sp.getChildren().addAll(new ScrollPane(), textArea);
+        bp.setCenter(sp);
 
         //bottom
         HBox hBox1 = new HBox(20);
@@ -118,7 +122,7 @@ public class Main extends Application {
             } catch (IOException | ClassNotFoundException ex) {
             }
         });
-
+        
     }
 
     public static void main(String[] args) {

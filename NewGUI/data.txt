@@ -1,0 +1,3 @@
+Students{Person{name=Pasawee Laearun, address=kake1, Phone=0985626152, email=61010707@kmitl.ac.th, dateHired=Fri May 17 17:55:11 ICT 2019}status=FRESHLY}
+Faculty{Employee{Person{name=ha jhon, address=kake1, Phone=0985626152, email=61010707@kmitl.ac.th, dateHired=Fri May 17 17:55:11 ICT 2019}salary=1245656.0, office=kmitl}rank=4}
+Staff{Employee{Person{name=jonathan smith, address=kake2, Phone=0985626152, email=61010656@kmitl.ac.th, dateHired=Fri May 17 17:55:11 ICT 2019}salary=12356.0, office=kmitl}staff=staff book}
